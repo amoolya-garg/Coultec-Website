@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coultec2.css">
+</head>
+<body>
+
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-bar bar1"></div>
+    <div class="splash-bar bar2"></div>
+    <div class="splash-bar bar3"></div>
+    <div class="splash-bar bar4"></div>
+    <div class="splash-center">
+      <div class="splash-message">Tap to Enter</div>
+    </div>
+  </div>
+
+ <!-- Navigation Section -->
+<section id="navigation" class="section">
+  <div class="side-image left-color"></div>
+
+  <div class="nav-content">
+    <div class="logo-full">
+      <img src="coulteclogo2.png" alt="Full Logo">
+    </div>
+    <nav class="nav-menu">
+      <a href="#technology">Technology</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="side-image right-color"></div>
+</section>
+
+  <!-- Technology Section -->
+  <section id="technology" class="section content-section">
+    <img src="pic1coultec.jpg" alt="Tech Image 1">
+    <h1>OUR ALL-IN-ONE SOLUTION</h1>
+    <h2>MOTOR</h2>
+    <p>The inverter system is integral to the performance of our motors, with options for both single and split inverter packages, depending on the number and type of motors used. Each motor is paired with a dedicated inverter, offering a more affordable solution without compromising performance. The motor controlling unit (MCU) includes a processor that manages motor functions, ensuring precise control and efficiency. For additional customization, we provide software that can be tuned to optimize performance based on the customer's available hardware. Our cooling solutions are engineered by the manufacturer, making heat management straightforward and effective for seamless integration into any application.</p>
+    <video autoplay muted loop>
+        <source src="coultecani.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <h2>INVERTER AND CONTROLLER</h2>
+    <p>The inverter system is integral to the performance of our motors, with options for both single and split inverter packages, depending on the number and type of motors used. Each motor is paired with a dedicated inverter, offering a more affordable solution without compromising performance. The motor controlling unit (MCU) includes a processor that manages motor functions, ensuring precise control and efficiency. For additional customization, we provide software that can be tuned to optimize performance based on the customer's available hardware. Our cooling solutions are engineered by the manufacturer, making heat management straightforward and effective for seamless integration into any application.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section content-section">
+    <img src="https://via.placeholder.com/400x200" alt="Service Image 1">
+    <p>We offer motor diagnostics, repairs, and custom builds for industrial applications.</p>
+    <img src="https://via.placeholder.com/400x200" alt="Service Image 2">
+    <p>Get tailored support and quick service turnaround for all motor types.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section content-section">
+    <img src="coultecb1.jpg" alt="About Image 1">
+    <p>With over 20 years in motor engineering, our team delivers excellence.</p>
+    <p>Our Team</p>
+    <div id="team">
+    <img src="tomasz.png" alt="About Image 2">
+    <p id="staff">Tomasz Wyzlic</p>
+    <p id="ceo">CEO</p>
+    </div>
+    
+    <div id="team">
+    <img src="pranav.png" alt="About Image 3">
+      <div id="teamtext">
+        <p id="staff">Pranav Gulhati</p>
+        <p id="ceo">COO</p>
+      </div>
+      </div>
+    <div id="team">
+    <img src="ammolya.png" alt="About Image 4">
+    <p id="staff">Ammolya Garg</p>
+    <p id="ceo">CTO</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Black Line Divider -->
+  <div class="divider"></div>
+
+  <!-- End Section -->
+  <section id="end" class="section end-section">
+    <p>© 2025 Coultec GmBH | Privacy Policy | Terms of Service</p>
+    <img src="coulteclogo1.png" alt="coulteclogo">
+  </section>
+  
+
+
+  <!-- JavaScript -->
+  <script>
+    const splash = document.getElementById('splash-screen');
+
+    splash.addEventListener('click', () => {
+      splash.classList.add('animate');
+
+      setTimeout(() => {
+        splash.style.display = 'none';
+      }, 1800);
+    });
+  </script>
+
+</body>
+</html>
